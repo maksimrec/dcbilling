@@ -1,0 +1,15 @@
+# Server field in DB
+server-name: dcserver.ru
+
+# Automatically become 'false' after the first run
+first-start: true
+
+# SQL Connection
+sql:
+  host: localhost
+  port: 3306
+  user: root
+  pass: 
+  db: minecraft
+  tb_command_poller: bill_command_poller
+  tb_uptime: tb_uptime
