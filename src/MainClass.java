@@ -1,13 +1,19 @@
+import java.util.logging.Logger;
 
-public class MainClass {
+import org.bukkit.plugin.java.JavaPlugin;
 
-	/**
-	 * @param args
-	 */
-	
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+public class MainClass extends JavaPlugin {
 
+	private static final Logger _log = Logger.getLogger("minecraft");
+
+	@Override
+	public void onDisable() {
+		_log.info("[dcbilling] Stop");
+	}
+
+	@Override
+	public void onEnable() {
+		_log.info("[dcbilling] Start");
 	}
 
 }
